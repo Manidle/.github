@@ -9,8 +9,8 @@
 
 -   **[김동현](https://github.com/soulchicken)** 
 -   **[김영광](https://github.com/95Glory)** 
--   **[김도현](https://github.com/Yiseun)** 
--   **[이세운](https://github.com/thovy)** 
+-   **[김도현](https://github.com/thovy)** 
+-   **[이세운](https://github.com/Yiseun)** 
 
 <br/>
 
