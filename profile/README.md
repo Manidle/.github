@@ -67,73 +67,245 @@
 - 어쩌고 기능
 
 ## **00. ERD (Entity Relationship Diagram)**
- ![image](https://user-images.githubusercontent.com/85923524/175849491-49e9314f-71e7-43ea-aa76-f71a7243886d.png)
+ ![image (3).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a30bc681-3db0-4bba-b693-a89f7f492fa0/image_(3).png)
 
 <br/>
 
 
-### **Patient** 테이블
+
+### **ATTRACTION** 테이블
 | column          | data type   | 설명            |
 | --------------- | ----------- | --------------- |
-| people_id (PK)  | LONG        | 고유 인덱스     |
-| people_name     | VARCHAR(45) | 환자 이름       |
-| people_gender   | TINYINT     | 환자 성별       |
-| people_home     | VARCHAR(45) | 환자 주소       |
-| people_phone    | INT         | 환자 전화번호   |
-| people_isdanger | TINYINT     | 환자 위험군여부 |
+| attraction_id (PK)  | BIGINT        | 관광지 식별자     |
+| name     | VARCHAR | 관광지 이름       |
+| address   | VARCHAR     | 관광지 주소       |
+| description     | VARCHAR | 관광지 소개글       |
+| price    | INT         | 관광지 입장료   |
+| likeCount | INT     | 관광지 좋아요 숫자 |
  
--  환자 정보가 저장된다.
--  환자 정보의 매니저 정보가 없으면 등록 안된다.
+-  관광지에 관한 정보가 저장되는 테이블
 
 <br/>
 
-### **Manager** 테이블                                  
+### **Attraction_Like** 테이블                                  
 | column          | data type   | 설명                |
 | --------------- | ----------- | ------------------- |
-| manager_id (PK) | LONG        | 고유 인덱스         |
-| manager_name    | VARCHAR(45) | 환자관리자 이름     |
-| manager_phone   | VARCHAR(45) | 환자관리자 전화번호 |
+| attraction_like_id (PK) | BIGINT        | 유저가 좋아요 누른 관광지 식별자         |
+| user_id    | BIGINT | 유저식별자     |
+| attraction_id   | BIGINT | 관광지 식별자2 |
 
-- 매니저 정보가 저장된다.
-
-<br/>
-
-### **Hospital** 테이블                                  
-| column               | data type   | 설명              |
-| -------------------- | ----------- | ----------------- |
-| hosipital_id (PK)    | LONG        | 고유 인덱스       |
-| hosipital_name       | VARCHAR(45) | 병원 이름         |
-| hosipital_patientnum | INT         | 병원 내 환자 수   |
-| hosipital_roomlimit  | INT         | 병원 내 남은 병실 |
-
-- 병원 정보가 저장된다.
-- 환자들의 정보를 가지고 있다.
+- Attraction(관광지)의 좋아요를 유저정보와 연결시켜주는 테이블.
 
 <br/>
 
-### **Hospitalroom** 테이블                                  
-| column                        | data type | 설명           |
-| ----------------------------- | --------- | -------------- |
-| hosipitalroom_roomnumber (PK) | LONG      | 고유 인덱스    |
-| hosipitalroom_capacity        | LONG      | 병실 수용 인원 |
+### **Board** 테이블
+| column          | data type   | 설명            |
+| --------------- | ----------- | --------------- |
+| board_id (PK)  | BIGINT        | 게시판 식별자     |
+| board_name     | VARCHAR | 게시판 이름       |
 
-- 병실 정보가 저장된다.
-- 병원 정보를 가지고 있다.
-- 고위험군 환자들의 정보를 가지고 있다.
+-  POST(게시글)을 하위 엔티티로 가지는 게시판 테이블
 
 <br/>
 
-### **Infectiontracking** 테이블                                  
+### **PLATFORM** 테이블
+| column          | data type   | 설명            |
+| --------------- | ----------- | --------------- |
+| platform_id (PK)  | BIGINT        | 플랫폼 식별자     |
+| city_Code     | VARCHAR | 도시코드       |
+| city_Name     | VARCHAR | 도시이름       |
+| nodeId     | VARCHAR | 기차역코드       |
+| nodeName     | VARCHAR | 기차역이름       |
+
+-  기차(OPEN API) 역코드 변환 테이블
+
+<br/>
+
+### **POST** 테이블                                  
 | column                    | data type   | 설명              |
 | ------------------------- | ----------- | ----------------- |
-| infectiontracking_id (PK) | LONG        | 고유 인덱스       |
-| infectiontracking_area    | VARCHAR(45) | 감염경로 방문지역 |
-| infectiontracking_cause   | VARCHAR(45) | 감염경로 방문이유 |
-| infectiontracking_date    | LOCALDATE   | 감염경로 방문날짜 |
-- 감염환자 동선 및 장소 정보가 저장된다.
-- 환자의 정보를 가지고 있다.
+| post_id (PK) | BIGINT        | 게시글 식별자       |
+| user_id    | BIGINT | 유저 식별자 |
+| board_id   | BIGINT | 게시판 식별자2 |
+| title    | VARCHAR   | 제목 |
+| contents    | VARCHAR   | 본문 |
+| like_count    | INT   | 좋아요 숫자 |
+| read_count    | INT   | 조회수 |
+| boardName    | VARCHAR   | 게시판 이름(DTO) |
+| nickname    | VARCHAR   | 작성자 닉네임(DTO) |
+- BOARD(게시판)의 하위 엔티티, 게시글에 관한 정보를 담고 있는 테이블
 
 <br/>
+
+### **POST_ATTRACTION** 테이블                                  
+| column                    | data type   | 설명              |
+| ------------------------- | ----------- | ----------------- |
+| post_attraction_id (PK) | BIGINT        | 참고된 관광지 식별자       |
+| attraction_id    | BIGINT | 관광지 식별자 |
+| post_id   | BIGINT | 게시글 식별자 |
+| name(DTO)   | VARCHAR | 이름 |
+| address(DTO)   | VARCHAR | 주소 |
+| description(DTO)   | VARCHAR | 소개글 |
+| price(DTO)   | INT | 입장료 |
+| likeCount(DTO)   | INT | 좋아요 숫자 |
+
+- POST(게시글)에 입력되는 정보
+
+<br/>
+
+### **POST_LIKE** 테이블                                  
+| column                    | data type   | 설명              |
+| ------------------------- | ----------- | ----------------- |
+| post_like_id (PK) | BIGINT        | 유저가 좋아요 누른 게시글 식별자       |
+| post_id    | BIGINT | 게시글 식별자2 |
+| user_id   | BIGINT | 유저 식별자 |
+
+- POST(게시글)의 좋아요와 유저정보를 연결해주는 테이블
+
+<br/>
+
+### **POST_RENTCAR** 테이블                                  
+| column                    | data type   | 설명              |
+| ------------------------- | ----------- | ----------------- |
+| post_rentcar_id (PK) | BIGINT        | 참고된 렌트카 식별자       |
+| rentcar_id    | BIGINT | 렌트카 식별자2 |
+| post_id   | BIGINT | 게시글 식별자 |
+| address(DTO)   | VARCHAR | 업체주소 |
+| companyName(DTO)   | VARCHAR | 업체이름 |
+| carSort(DTO)   | VARCHAR | 차량종류 |
+| carName(DTO)   | VARCHAR | 차량이름 |
+| likeCount(DTO)   | INT | 좋아요 숫자 |
+
+- POST(게시글)에 입력되는 정보
+
+<br/>
+
+
+### **POST_STAY** 테이블                                  
+| column                    | data type   | 설명              |
+| ------------------------- | ----------- | ----------------- |
+| post_stay_id (PK) | BIGINT        | 참고된 숙소 식별자       |
+| stay_id    | BIGINT | 숙소 식별자 |
+| post_id   | BIGINT | 게시글 식별자 |
+| name(DTO)    | VARCHAR   | 이름 |
+| address(DTO)    | VARCHAR   | 주소 |
+| price(DTO)    | INT   | 1박당 가격 |
+| checkIn(DTO)    | DATETIME   | 체크인 시간 |
+| checkOut(DTO)    | DATETIME   | 체크아웃 시간 |
+| likeCount(DTO)    | INT   | 좋아요 숫자 |
+- POST(게시글)에 입력되는 숙소정보
+
+<br/>
+
+### **POST_TRAIN** 테이블                                  
+| column                    | data type   | 설명              |
+| ------------------------- | ----------- | ----------------- |
+| post_train_id (PK) | BIGINT        | 참고된 기차 식별자       |
+| post_id    | BIGINT | 게시글 식별자 |
+| depplacename   | VARCHAR | 출발역 |
+| arrplacename    | VARCHAR   | 도착역 |
+| depplan    | VARCHAR   | 주소 |
+| price(DTO)    | INT   | 1박당 가격 |
+| checkIn(DTO)    | DATETIME   | 체크인 시간 |
+| checkOut(DTO)    | DATETIME   | 체크아웃 시간 |
+| likeCount(DTO)    | INT   | 좋아요 숫자 |
+- POST(게시글)에 입력되는 정보
+
+<br/>
+
+### **RENTCAR** 테이블                                  
+| column                    | data type   | 설명              |
+| ------------------------- | ----------- | ----------------- |
+| rentcar_id (PK) | BIGINT        | 렌트카 식별자       |
+| address    | VARCHAR | 업체주소 |
+| companyName   | VARCHAR | 업체이름 |
+| carSort    | VARCHAR   | 차량종류 |
+| carName    | VARCHAR   | 차량이름 |
+| likeCount    | INT   | 좋아요숫자 |
+
+- 렌트카에 관한 정보가 저장되는 테이블
+
+<br/>
+
+### **RENTCAR_Like** 테이블                                  
+| column                    | data type   | 설명              |
+| ------------------------- | ----------- | ----------------- |
+| rentCar_like_id (PK) | BIGINT        | 유저가 좋아요 누른 렌트카 식별자       |
+| rentcar_id    | BIGINT | 렌트카 식별자 |
+| user_id   | BIGINT | 유저 식별자 |
+
+- RENTCAR(렌트카)의 좋아요와 유저정보를 연결해주는 테이블
+
+<br/>
+
+### **REPLY** 테이블                                  
+| column                    | data type   | 설명              |
+| ------------------------- | ----------- | ----------------- |
+| reply_id (PK) | BIGINT        | 댓글 식별자       |
+| post_id    | BIGINT | 게시글 식별자 |
+| user_id   | BIGINT | 유저 식별자 |
+| contents    | VARCHAR   | 내용 |
+| nickName(DTO)    | VARCHAR   | 작성자 닉네임 |
+
+- POST(게시글)에 입력되는 댓글정보
+
+<br/>
+
+
+
+### **STAY** 테이블                                  
+| column                    | data type   | 설명              |
+| ------------------------- | ----------- | ----------------- |
+| stay_id (PK) | BIGINT        | 숙소 식별자       |
+| name    | VARCHAR | 이름 |
+| address   | VARCHAR | 주소 |
+| price    | INT   | 1박당 가격 |
+| checkIn    | DATETIME   | 체크인 시간 |
+| checkOut    | DATETIME   | 체크아웃 시간 |
+| likeCount    | INT   | 좋아요 숫자 |
+
+- 숙소에 관한 정보가 저장되는 테이블
+
+<br/>
+
+### **stay_like** 테이블                                  
+| column                    | data type   | 설명              |
+| ------------------------- | ----------- | ----------------- |
+| stay_like_id (PK) | BIGINT        | 유저가 좋아요 누른 숙소 식별자       |
+| stay_id    | BIGINT | 숙소 식별자2 |
+| user_id   | BIGINT | 유저 식별자 |
+
+- STAY(숙소)의 좋아요와 유저정보를 연결해주는 테이블
+
+<br/>
+
+
+### **USER** 테이블                                  
+| column               | data type   | 설명              |
+| -------------------- | ----------- | ----------------- |
+| user_id (PK)    | BIGINT        | 유저 식별자       |
+| username       | VARCHAR | 로그인 아이디         |
+| password | VARCHAR         | 패스워드   |
+| nickname  | VARCHAR         | 닉네임 |
+| roles  | VARCHAR         | SECURITY권한 |
+
+- 서비스 이용자들의 정보가 저장되는 테이블
+
+<br/>
+
+### **User_Info** 테이블                                  
+| column                        | data type | 설명           |
+| ----------------------------- | --------- | -------------- |
+| user_info_id (PK) | BIGINT      | 유저 상세정보 식별자    |
+| user_id        | BIGINT      | 유저 식별자 |
+| profileImg        | VARCHAR      | 유저 프로필 사진 URL |
+| email        | VARCHAR      | 유저 이메일 |
+
+- 서비스 이용자들의 추가정보가 ㅈ저장되는 테이블
+
+<br/>
+
+
 
 
 ### **Self_qurantine** 테이블                                  
