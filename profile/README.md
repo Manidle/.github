@@ -309,37 +309,12 @@
 | profileImg        | VARCHAR      | 유저 프로필 사진 URL |
 | email        | VARCHAR      | 유저 이메일 |
 
-- 서비스 이용자들의 추가정보가 ㅈ저장되는 테이블
+- 서비스 이용자들의 추가정보가 저장되는 테이블
 
 <br/>
 
 
 
-
-### **Self_qurantine** 테이블                                  
-| column                      | data type   | 설명             |
-| --------------------------- | ----------- | ---------------- |
-| self_qurantine_id (PK)      | LONG        | 고유 인덱스      |
-| self_quarantine_people_name | VARCHAR(45) | 자가격리자 이름  |
-| self_quarantine_date        | LOCALDATE   | 자가 격리 시작일 |
-| self_quarantine_release     | LOCALDATE   | 자가 격리 해제일 |
-- 자가격리자의 격리기간 정보가 저장된다.
-- 환자의 정보를 가지고 있다.
-
-<br/>
-
-### **danger** 테이블                                  
-| column              | data type | 설명                    |
-| ------------------- | --------- | ----------------------- |
-| danger_id (PK)      | LONG      | 고유 인덱스             |
-| danger_care_date    | LOCALDATE | 고위험 환자 치료 시작일 |
-| danger_care_release | LOCALDATE | 고위험 환자 치료 중단일 |
-
-- 고위험군 환자의 격리기간 정보가 저장된다.
-- 병실의 정보를 가지고 있다.
-- 환자의 정보를 가지고 있다.
-
-<br/>
 
 ## **00. 트러블 슈팅**
 1. 무한 루프 : 테이블들을 서로 매핑해주는 과정에서 Entity를 return했을 때 객체 안에 다른 Entity를 return해주는 무한 순환 참조가 발생됨. **DTO패턴** 을 사용하여 Entity를 직접 참조하지 않고도 return할 수 있게 코드를 변경하여 무한 루프를 해결.   
