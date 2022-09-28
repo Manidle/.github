@@ -1,38 +1,47 @@
 # ✈️PlannerGram
 
- <br/>
+## **00. 팀명**
+### 🏋️‍♂️Man I-dle🏋️‍♂️
 
-## **00. 팀원 명단**
+4명의 남자들만 모여 다소 프로젝트가 **딱딱** 할 수는 있지만  
+  
+어느 팀 부럽지 않은 **뚝딱**이들이 모였습니다.  
+  
+열정과 배움에 대한 열의만큼은 남들에게 **떵떵** 거릴수 있는 **Man I-dle 입니다.**
+
+## **01. 팀원 명단 & 역할**
+
+<br/>
+
+-   **[김동현](https://github.com/soulchicken)** [BackEnd / Security / Web Publisher]
+-   **[김영광](https://github.com/95Glory)** [BackEnd / Security / Open API]
+-   **[김도현](https://github.com/thovy)**  [FrontEnd ]
+-   **[이세운](https://github.com/Yiseun)** [DevOps]
 
 <br/>
 
--   **[김동현](https://github.com/soulchicken)** 
--   **[김영광](https://github.com/95Glory)** 
--   **[김도현](https://github.com/thovy)** 
--   **[이세운](https://github.com/Yiseun)** 
+## **02. 기술 스택**
 
 <br/>
-
-## **00. 기술 스택**
-
-<br/>
-<img src="https://img.shields.io/badge/REACT-61DAFB?style=flat&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black"/>  <img src="https://img.shields.io/badge/JAVA-83B81A?style=flat&logo=java&logoColor=white"/> <img src="https://img.shields.io/badge/Gradle-02303A?style=flat&logo=Gradle&logoColor=white"/> <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=Spring Boot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat&logo=Spring Security&logoColor=white"/>
-<img src="https://img.shields.io/badge/JSON_Web_Tokens-000000?style=flat&logo=JSON Web Tokens&logoColor=white"/> <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white"/> <img src="https://img.shields.io/badge/Agile-EF2D5E?style=flat&logo=a-frame&logoColor=white"/> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white"/> <img src="https://img.shields.io/badge/GIT-F05032?style=flat&logo=Git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=Docker&logoColor=white"/> <img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=Amazon EC2&logoColor=black"/> <img src="https://img.shields.io/badge/MUI-007FFF?style=flat&logo=MUI&logoColor=white"/>
+<img src="https://img.shields.io/badge/REACT-61DAFB?style=flat&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black"/>
+</br> 
+<img src="https://img.shields.io/badge/JAVA-83B81A?style=flat&logo=java&logoColor=white"/> <img src="https://img.shields.io/badge/Gradle-02303A?style=flat&logo=Gradle&logoColor=white"/> <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=Spring Boot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat&logo=Spring Security&logoColor=white"/>
+<img src="https://img.shields.io/badge/JSON_Web_Tokens-000000?style=flat&logo=JSON Web Tokens&logoColor=white"/> <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white"/> <img src="https://img.shields.io/badge/Agile-EF2D5E?style=flat&logo=a-frame&logoColor=white"/> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white"/> <img src="https://img.shields.io/badge/GIT-F05032?style=flat&logo=Git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=Amazon EC2&logoColor=black"/> <img src="https://img.shields.io/badge/MUI-007FFF?style=flat&logo=MUI&logoColor=white"/>
 <img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=Swagger&logoColor=black"/>
 <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=Jenkins&logoColor=white"/>
-<img src="https://img.shields.io/badge/Hadoop-66CCFF?style=flat&logo=Apache%20Hadoop&logoColor=black"/>
-<img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat&logo=RabbitMQ&logoColor=white"/>
-
-
-
 
 <br/>
 
 ## **00. 협업방식**  
 1. 애자일 프로세스  
-    * check in / check out ground Role 방식을 통한 멤버별 하루 과업량, 출/퇴근시간, 회고 등을 기록.
+    - check in / check out Ground Role 방식을 통한 멤버별 하루 과업량, 출/퇴근시간, 회고 등을 기록.
     * BackLog를 작성하여 프로젝트 총 소요 StoryPoint를 집계하여 개발 계획관리를 진행.
     * Sprint 작성하여 주 개발일정관리 진행.
+    >  [Sprint]
+    https://github.com/orgs/Manidle/projects/1
+	    [Check in / Check out]
+	    https://www.notion.so/4d5a322d0df74b0bb7cef51a44d88d0b?v=2d459594b7be4128b262b4607ba0c347
+	    
 
 2. GitHub
     * Git을 활용한 코드 형상관리.
@@ -40,10 +49,11 @@
     * Project Tab을 활용하여 BackLog, Sprint 틀 활용.
 
 3. Notion
-    * 주간 현황파악을 간단하게 볼 수 있는 주간현황 자료공유
-    * API명세서틑 통한 BackEnd / FrontEnd 개발자들과의 컨벤션 공유
+    * 주간 현황파악을 간단하게 볼 수 있는 주간현황 자료공유    
+4.  Swagger
+	* BackEnd / FrontEnd 개발자들과의 URI소통
 
-4. Figma
+6. Figma
     * 초기 화면단 WireFrame 작성당시 멤버들과의 화면단 구축 협업작업.
 
 
@@ -51,28 +61,22 @@
 
 ### **PlannerGram**
 
-- 여행 코스를 공유하는 커뮤니티
-- 게시글, 여행지, 숙소 등을 좋아요할 수 있고 이를 바탕으로 핫 게시글 리스트 등을 만들 수 있다.
+**PLAN**(여행계획) + **ER** + **GRAM**(통신수단, telegram)
 
+유저들이 **여행코스를 작성**하고 나누는 **커뮤니티 서비스**
+
+지역마다의 **숙소 / 관광지 / 기차표 / 렌트카 정보를** 얻어갈 수 있는 서비스를 제공  
 <br/>
 
 ## **00. 도메인 관련 용어**
 
-- ** 유저(User)** : 서비스를 이용하는 사용자.
-- ** 렌트카(Rentcar)** : 차량을 일정기간 유상으로 대여하는 사업 및 그 사업을 통해 대여된 차량을 뜻한다.
-- ** 관광지(Attraction)** : 관광, 여행, 유람에서 역사, 문화, 자연 경관 등의 관광자산을 가진 지역을 뜻한다.
-- ** 숙박(Stay)** : 여행자와 관광객들이 숙박을 할 수 있는 시설이 있는 업소이다.
-- ** 기차(TRAIN)** : 사람을 실어나르는 여객차를 뜻한다.
-- ** 게시글(Post)** : 여러 사람이 볼 수 있도록 서비스되는 서버에 유저(User)가 업로드 한 텍스트를 말한다.
-- ** 댓글(REPLY)** : 서버에 업로드 된 게시글(POST)에 유저(USER)가 짧게 덧붙인 텍스트를 말한다. 
-
-
-
-## **00. 기능 명세**
-[API DOCS](https://documenter.getpostman.com/view/21185842/UzBsHjMc) - PostMan API Documents
-
-### 유저 관련기능
-- 어쩌고 기능
+* **User(유저)** : 서비스를 이용하는 사용자.
+* **Rentcar(렌트카)** : 차량을 일정기간 유상으로 대여하는 사업 및 그 사업을 통해 대여된 차량을 뜻한다
+*  **Attraction(관광지)** : 관광, 여행, 유람에서 역사, 문화, 자연 경관 등의 관광자산을 가진 지역을 뜻한다.
+*  **Stay(숙박)** : 여행자와 관광객들이 숙박을 할 수 있는 시설이 있는 업소이다.
+* **TRAIN(기차)** : 사람을 실어나르는 여객차를 뜻한다.
+* **Post(게시글)** : 여러 사람이 볼 수 있도록 서비스되는 서버에 유저(User)가 업로드 한 텍스트를 말한다.
+* **REPLY(댓글)** : 서버에 업로드 된 게시글(POST)에 유저(USER)가 짧게 덧붙인 텍스트를 말한다. 
 
 ## **00. ERD (Entity Relationship Diagram)**
  ![image (3)](https://user-images.githubusercontent.com/92356170/192697493-85ff5f04-9b70-4ce2-9d39-882927148eb5.png)
@@ -336,7 +340,7 @@
 - **👨이세운** : 
 <br/>
 
-- **👨김영광** : 프
+- **👨김영광** : 
 
 <br/>
 
