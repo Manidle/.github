@@ -1,3 +1,4 @@
+
 # ✈️PlannerGram
 
 ## **00. 팀명**
@@ -23,23 +24,23 @@
 ## **02. 기술 스택**
 
 <br/>
-<img src="https://img.shields.io/badge/REACT-61DAFB?style=flat&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black"/>
-</br> 
-<img src="https://img.shields.io/badge/JAVA-83B81A?style=flat&logo=java&logoColor=white"/> <img src="https://img.shields.io/badge/Gradle-02303A?style=flat&logo=Gradle&logoColor=white"/> <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=Spring Boot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat&logo=Spring Security&logoColor=white"/>
-<img src="https://img.shields.io/badge/JSON_Web_Tokens-000000?style=flat&logo=JSON Web Tokens&logoColor=white"/> <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white"/> <img src="https://img.shields.io/badge/Agile-EF2D5E?style=flat&logo=a-frame&logoColor=white"/> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white"/> <img src="https://img.shields.io/badge/GIT-F05032?style=flat&logo=Git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=Amazon EC2&logoColor=black"/> <img src="https://img.shields.io/badge/MUI-007FFF?style=flat&logo=MUI&logoColor=white"/>
-<img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=Swagger&logoColor=black"/>
-<img src="https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=Jenkins&logoColor=white"/>
+<img src="https://img.shields.io/badge/REACT-61DAFB?style=flat&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black"/> <img src="https://img.shields.io/badge/MUI-007FFF?style=flat&logo=MUI&logoColor=white"/>  
 
+<img src="https://img.shields.io/badge/JAVA-83B81A?style=flat&logo=java&logoColor=white"/> <img src="https://img.shields.io/badge/Gradle-02303A?style=flat&logo=Gradle&logoColor=white"/> <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=Spring Boot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat&logo=Spring Security&logoColor=white"/> <img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=Swagger&logoColor=black"/> <img src="https://img.shields.io/badge/JSON_Web_Tokens-000000?style=flat&logo=JSON Web Tokens&logoColor=white"/> <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Agile-EF2D5E?style=flat&logo=a-frame&logoColor=white"/> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white"/> <img src="https://img.shields.io/badge/GIT-F05032?style=flat&logo=Git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=Amazon EC2&logoColor=black"/> <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=Jenkins&logoColor=white"/>
 <br/>
-
-## **00. 협업방식**  
+## **03. 협업방식**  
 1. 애자일 프로세스  
     - check in / check out Ground Role 방식을 통한 멤버별 하루 과업량, 출/퇴근시간, 회고 등을 기록.
     * BackLog를 작성하여 프로젝트 총 소요 StoryPoint를 집계하여 개발 계획관리를 진행.
     * Sprint 작성하여 주 개발일정관리 진행.
     >  [Sprint]
-    https://github.com/orgs/Manidle/projects/1
-	    [Check in / Check out]
+    https://github.com/orgs/Manidle/projects/1  
+    >
+    >[Check in / Check out]
 	    https://www.notion.so/4d5a322d0df74b0bb7cef51a44d88d0b?v=2d459594b7be4128b262b4607ba0c347
 	    
 
@@ -57,7 +58,7 @@
     * 초기 화면단 WireFrame 작성당시 멤버들과의 화면단 구축 협업작업.
 
 
-## **00. 프로젝트 주제**  
+## **04. 프로젝트 주제**  
 
 ### **PlannerGram**
 
@@ -68,7 +69,15 @@
 지역마다의 **숙소 / 관광지 / 기차표 / 렌트카 정보를** 얻어갈 수 있는 서비스를 제공  
 <br/>
 
-## **00. 도메인 관련 용어**
+## **05. 프로젝트 선정이유**  
+
+팀원들과 모여 요즘 각자의 관심사를 말하는 시간을 가지던 중, 공통 관심사가 ‘여행’이라는 키워드 였고, ‘여행’ 관련으로 어떤 프로젝트를 진행하면 좋을 지 고민하였다.
+
+우리는 본인의 일상을 게시하며 사람들과 소통하는 FaceBook 혹은 Instagram 같은 SNS 페이지는 많지만 **어떠한 주제에 국한되어 사람들과 소통하는 사이트가 현재 미비**하다고 느껴지게 되었다.
+
+때문에, 우리는 여행계획을 세울 때 고려해야 할 숙소, 교통수단, 관광지, 렌트카 정보를 사용자에게 제공하여 사용자에게 유용한 정보를 전달해주고, 사용자들이 커뮤니티 게시판에 글을 올리면서 사용자가 이용한 렌트카, 숙소, 교통수단, 관광지 정보를 한 눈에 보기 편하도록 공유하며 **사용자들간 소통을 목적으로 한 게시글 기능**을 만들어보고자 ‘PlannerGram’ 이라는 주제로 프로젝트를 선정하게 되었다.
+
+## **06. 도메인 관련 용어**
 
 * **User(유저)** : 서비스를 이용하는 사용자.
 * **Rentcar(렌트카)** : 차량을 일정기간 유상으로 대여하는 사업 및 그 사업을 통해 대여된 차량을 뜻한다
@@ -78,7 +87,7 @@
 * **Post(게시글)** : 여러 사람이 볼 수 있도록 서비스되는 서버에 유저(User)가 업로드 한 텍스트를 말한다.
 * **REPLY(댓글)** : 서버에 업로드 된 게시글(POST)에 유저(USER)가 짧게 덧붙인 텍스트를 말한다. 
 
-## **00. ERD (Entity Relationship Diagram)**
+## **07. ERD (Entity Relationship Diagram)**
  ![image (3)](https://user-images.githubusercontent.com/92356170/192697493-85ff5f04-9b70-4ce2-9d39-882927148eb5.png)
 
 <br/>
@@ -320,7 +329,7 @@
 
 
 
-## **00. 트러블 슈팅**
+## **08. 트러블 슈팅**
 1. 무한 루프 : 테이블들을 서로 매핑해주는 과정에서 Entity를 return했을 때 객체 안에 다른 Entity를 return해주는 무한 순환 참조가 발생됨. **DTO패턴** 을 사용하여 Entity를 직접 참조하지 않고도 return할 수 있게 코드를 변경하여 무한 루프를 해결.   
 2. 타입 에러 : 내장함수를 사용할때 타입이 불일치하여 사용 못하는 문재 발생하여
 **.orElseThrow(Exception::new)** 을 사용하여 해결.   
@@ -329,7 +338,7 @@
 
 <br/>
 
-## **00. 느낀점**
+## **09. 느낀점**
 - **👨김동현** : 
 
 <br/>
@@ -344,7 +353,7 @@
 
 <br/>
 
-## **00. 참고 자료** 
+## **10. 참고 자료** 
 - [커밋 컨벤션 DOCS](https://udacity.github.io/git-styleguide/)
 - [커밋 컨벤션 정리자료](https://overcome-the-limits.tistory.com/entry/%ED%98%91%EC%97%85-%ED%98%91%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-git-%EC%BB%A4%EB%B0%8B%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
 - [자바 컨벤션 DOCS](https://naver.github.io/hackday-conventions-java/)
