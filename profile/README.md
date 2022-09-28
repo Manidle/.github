@@ -115,10 +115,6 @@
     - Git을 활용한 코드 형상관리.
     - 이슈Tab을 활용하여 팀원들간의 기술공유 및 Exception 공유.
     - Project Tab을 활용하여 BackLog, Sprint 틀 활용.
-
-        > 
-        > [Manidle](https://github.com/Manidle)
-        > 
     
 2. **Notion**
     - 주간일정관리 계획 & 결과 공유
