@@ -75,7 +75,7 @@
 - 어쩌고 기능
 
 ## **00. ERD (Entity Relationship Diagram)**
- ![image (3).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a30bc681-3db0-4bba-b693-a89f7f492fa0/image_(3).png)
+ ![image (3)](https://user-images.githubusercontent.com/92356170/192697493-85ff5f04-9b70-4ce2-9d39-882927148eb5.png)
 
 <br/>
 
